@@ -17,6 +17,9 @@
 
 #include <sys/types.h>
 
+#define S_IRWXG (S_IRWXU >> 3)
+#define S_IRWXO (S_IRWXG >> 3)
+
 #ifdef __cplusplus
 extern "C" {
 #endif
